@@ -116,6 +116,9 @@ div.text-report textarea{
     resize: none;
 }
 
+.controls .cancel:hover{
+    background-color: red;
+}
 .controls .cancel{
     /*width: 135px;*/
     min-height: 30px;
@@ -132,7 +135,11 @@ div.text-report textarea{
     max-width: 150px;
     width: 100%;
 }
+.controls .apply:hover{
+    background-color: #002157;
+}
 .controls .apply{
+    transition: 0.2s;
     color: #ffffff;
     font-family: "HelveticaNeue_";
     font-size: 13px;
@@ -229,8 +236,15 @@ div.text-report textarea{
     color: white;
 }
 
+.status.yes:hover{
+    background-color: green;
+}
 .status.yes{
     background-color: #82ca9c;
+    transition: 0.2s;
+}
+.status.no:hover{
+    background-color: red;
 }
 .status.no{
     background-color: #fa424a;

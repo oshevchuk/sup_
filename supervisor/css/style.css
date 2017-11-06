@@ -1,0 +1,707 @@
+@font-face {
+    font-family: 'HelveticaNeue_';
+    src: url('font/HelveticaNeueCyr-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Proxima_';
+    src: url('font/ProximaNova-Reg.otf');
+}
+
+@font-face {
+    font-family: 'Proxima_bold';
+    src: url('font/ProximaNova-Semibold_0.otf');
+}
+@font-face {
+    font-family: 'Proxima2';
+    src: url('font/Proxima2.otf');
+}
+
+@font-face {
+    font-family: 'Proxima4';
+    src: url('font/Proxima4.otf');
+}
+
+body{
+    margin: 0px;
+}
+
+body, .main-container{
+    background-color: #f0f4fa;
+    margin-top: 8px;
+}
+
+.main-container{
+    max-width: 1200px;
+    min-width: 1100px;
+    width: 100%;
+}
+
+.list-body table, .list-body th, .list-body td{
+    border: 1px solid #e6e8ea;
+    /*border-style:1px solid black;*/
+
+}
+.list-body td{
+    padding: 8px 15px;
+
+}
+.list-body table{
+    width: calc(100% + 2px);
+}
+
+.list-report{
+    box-shadow: 0px 0px 5px #d1d8e2;
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
+}
+
+.list-body td:nth-child(odd){
+    color: #2066bc;
+    font-family: "Proxima_bold";
+    font-family: "Proxima4";
+    font-size: 14px;
+    /*font-weight: 400;*/
+    letter-spacing: 0.14px;
+}
+.list-body td:nth-child(even){
+    color: #000000;
+    font-family: "HelveticaNeue_";
+
+    font-size: 13px;
+    font-weight: 500;
+    /* Text style for "Test track" */
+    letter-spacing: 0.13px;
+}
+
+.list-cation{
+    background-color: #ffffff;
+    /*border-radius: 4px 4px 0px 0px;*/
+    color: #002157;
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    height: 55px;
+    padding-left: 20px!important;
+}
+
+.list-body{
+    background-color: #f6f7f7;;
+}
+
+.no-padding{
+    padding-left: 4px!important;
+    padding-right: 4px!important;
+}
+
+div.text-report{
+    /*padding: 0px 4px!important;*/
+}
+div.text-report textarea{
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    min-height: 200px;
+    border: none;
+    box-shadow: 0px 0px 5px #d1d8e2;
+    padding: 10px 20px;
+    color: #393b45;
+    font-family: "Proxima_";
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.13px;
+    outline: none;
+    resize: none;
+}
+
+.controls .cancel{
+    /*width: 135px;*/
+    min-height: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    background-color: #fa424a;
+    border: none;
+    color: #ffffff;
+    font-family: "HelveticaNeue_";
+    font-size: 13px;
+    font-weight: 400;
+    padding: 3px 40px ;
+    letter-spacing: 0.12px;
+    max-width: 150px;
+    width: 100%;
+}
+.controls .apply{
+    color: #ffffff;
+    font-family: "HelveticaNeue_";
+    font-size: 13px;
+    font-weight: 400;
+    /* Text style for "И, зменить" */
+    letter-spacing: 0.12px;
+    /*width: 141px;*/
+    min-height: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    background-color: #096aed;
+    border: none;
+    padding: 3px 35px ;
+
+}
+.controls .symbols{
+    color: #002157;
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+}
+.controls{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks{
+    border-radius: 6px;
+    background-color: white;
+    min-height: 400px;
+    height: 100%;
+    margin-top: 8px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 8px;
+}
+
+.tasks tr{
+    border-bottom: 1px solid #e6e8ea;;
+    color: #000000;
+    font-family: "HelveticaNeue_";
+    font-size: 13px;
+    font-weight: 500;
+    /* Text style for "Время/Стат" */
+    letter-spacing: 0.13px;
+}
+.tasks tr td{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tasks tr:nth-child(1) {
+
+}
+.tasks th{
+    background-color: #f6f7f7;
+    border: 1px solid #e6e8ea;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tasks td{
+    color: #002157;
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Proxima_';
+    /*Proxima2*/
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.tasks td:nth-child(2){
+    text-align: center;
+}
+
+.status{
+    color: #ffffff;
+    font-family: "Proxima Nova";
+    font-size: 12px;
+    font-weight: 400;
+    /*line-height: 25px;*/
+    letter-spacing: 0.24px;
+    background-color: #82ca9c;
+    padding: 4px 15px;
+    border-radius: 4px;
+    min-width: 49px;
+    height: 23px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.status.yes:hover{
+    background-color: green;
+}
+.status.yes{
+    transition: 0.2s;
+    background-color: #82ca9c;
+}
+.status.no:hover{
+    background-color: red;
+}
+.status.no{
+    transition: 0.2s;
+    background-color: #fa424a;
+}
+
+
+/*supervisor.pdf*/
+.main-container .row{
+    margin-bottom: 0px;
+}
+
+.project-list{
+    border-radius: 6px;
+    background-color: white;
+    min-height: 400px;
+    min-height: calc(100vh - 20px);
+    /*margin-top: 4px;*/
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 8px;
+}
+
+
+.project-list tr{
+    border-bottom: 1px solid #e6e8ea;;
+    color: #000000;
+    font-family: "HelveticaNeue_";
+    font-size: 13px;
+    font-weight: 500;
+    /* Text style for "Время/Стат" */
+    letter-spacing: 0.13px;
+}
+.project-list tr td{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.project-list tr:nth-child(1) {
+}
+
+.project-list th{
+    background-color: #f6f7f7;
+    border: 1px solid #e6e8ea;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.project-list td{
+    color: #002157;
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Proxima_';
+    /*Proxima2*/
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.project-list td:nth-child(1){
+    min-width: 110px;
+    text-align: center;
+}
+.project-list td:nth-child(2){
+    min-width: 130px;
+    color: #2066bc;
+    font-family: 'Proxima4';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.project-list td:nth-child(5){
+    width: 100px;
+}
+
+.controls_panel{
+    min-height: 100vh;
+
+}
+.day-info{
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    color: #002157;
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+
+    font-weight: 500;
+}
+.date:before{
+    background-image: url('../img/callendar-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.day-info .project-title{
+    color: #2066bc;
+    font-family: 'Proxima_';
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.day-info .project-title:before{
+    background-image: url('../img/pc-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 15px;
+    height: 10px;
+    margin-right: 8px;
+    /*margin-bottom: 2px;*/
+}
+
+.project-info{
+    color: #393b45;
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Proxima_';
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.project-work{
+    display: flex;
+    width: 100%;
+}
+.project-work  div{
+    width: 100%;
+}
+.project-work span{
+    color: #7f8ca2;
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Proxima_';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.24px;
+}
+.project-start{
+    color: #002157;
+    /*font-family: "Helvetica Neue Cyr";*/
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.project-start:before{
+    background-image: url('../img/start-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 11px;
+    height: 13px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+.control-button .project-start:before{
+    background-image: url('../img/start-icon-white.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 11px;
+    height: 13px;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+.stop:hover{
+    background-color: red;
+}
+.stop{
+    transition: 0.2s;
+}
+.project-stop{
+    transition: 0.2s;
+    color: #002157;
+    /*font-family: "Helvetica Neue Cyr";*/
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.project-stop:before{
+    background-image: url('../img/stop-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+.project-attach{
+    color: #002157;
+    /*font-family: "Helvetica Neue Cyr";*/
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.project-attach:before{
+    background-image: url('../img/attach-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 14px;
+    height: 15px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+.project-check{
+    color: #002157;
+    /*font-family: "Helvetica Neue Cyr";*/
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.project-check:before{
+    background-image: url('../img/chek-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 14px;
+    height: 15px;
+    margin-right: 8px;
+    /*margin-bottom: 3px;*/
+}
+.project-work-today{
+    color: #002157;
+    /*font-family: "Helvetica Neue Cyr";*/
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+.project-work-today:before{
+    background-image: url('../img/time-icon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.project-global{
+    display: flex;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.project-global > div{
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+
+    background-color: white;
+    width: calc(100% - 4px);
+    padding: 10px 20px;
+}
+.project-global > div:first-child{
+    margin-right: 4px;
+}
+.project-global > div:last-child{
+    margin-left: 4px;
+}
+.project-global span{
+    color: #7f8ca2;
+    /*font-family: "Proxima Nova";*/
+    font-family: 'Proxima_';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.24px;
+}
+
+/*.progress {*/
+    /*transform: rotate(-90deg);*/
+/*}*/
+
+/*.progress__value {*/
+    /*stroke-dasharray: 339.292;*/
+    /*stroke-dashoffset: 339.292;*/
+    /*animation: progress 2s infinite alternate;*/
+/*}*/
+
+/*@keyframes progress {*/
+    /*from {*/
+        /*stroke-dashoffset: 339.292;*/
+    /*}*/
+    /*to {*/
+        /*stroke-dashoffset: 0;*/
+    /*}*/
+/*}*/
+.control-button{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.control-button button:first-child{
+    margin-right: 4px;
+}
+.control-button button:last-child{
+    margin-left: 4px;
+}
+.control-button button{
+    width: calc(100% - 5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    }
+.control-button button span{
+    margin-left: -13px;
+    color: white;
+}
+button.start:hover{
+    background-color: #002157;
+}
+button.start{
+    transition: 0.2s;
+        height: 44px;
+    border-radius: 22px;
+    background-color: #096aed;
+}
+button.stop{
+    height: 44px;
+    border-radius: 22px;
+    background-color: #fa424a;
+}
+
+.project-report-btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.project-report-btn button{
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #002157;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.project-report-btn button span{
+    font-family: "HelveticaNeue_";
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+}
+
+.btn-attach{
+    height: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    background-color: #f6f7f7;
+}
+
+.btn-checked span{
+    color: white;
+}
+.btn-checked:hover{
+    background-color: #002157;
+}
+.btn-checked{
+    transition: 0.2s;
+    height: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    background-color: #096aed;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.project-report-btn .symbols{
+    display: inline-flex;
+    color: #002157;
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.sandbox{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+span.value{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-family: "HelveticaNeue_";
+    font-size: 16px;
+    font-weight: 500;
+    /* Text style for "25%" */
+    letter-spacing: 0.16px;
+    margin-left: 4px;
+}
+
+.progress-circle {
+    shape-rendering:geometricPrecision;
+}
+.progress-circle .progress {
+    stroke: #096aed;
+    stroke-width: 30;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 298;
+    -webkit-animation: progress-anim 1s ease forwards;
+    animation: progress-anim 1s ease forwards;
+}
+.progress-circle .bg {
+    stroke: #fa424a;
+    stroke-width: 30;
+}
+@-webkit-keyframes progress-anim {
+    0% {
+        stroke-dashoffset: 251;
+    }
+    100% {
+        stroke-dashoffset: 40;
+    }
+}
+@keyframes progress-anim {
+    0% {
+        stroke-dashoffset: 251;
+    }
+    100% {
+        stroke-dashoffset: 40;
+    }
+}
